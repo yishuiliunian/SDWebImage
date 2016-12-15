@@ -40,7 +40,7 @@ typedef void(^SDWebImageCalculateSizeBlock)(NSUInteger fileCount, NSUInteger tot
 @interface SDImageCache : NSObject
 
 #pragma mark - Properties
-
+@property  (nonatomic, strong, readonly) NSString * diskCachePath;
 /**
  *  Cache Config object - storing all kind of settings
  */
